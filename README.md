@@ -1,5 +1,5 @@
 
-# Hotel Management System
+# Nidella Rest
 
 (Include Room Manager part)
 
