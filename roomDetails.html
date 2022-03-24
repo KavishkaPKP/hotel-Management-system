@@ -22,9 +22,6 @@ body{
 		margin-bottom: 50px;
 	}
 </style>
-
-
-
 </head>
 <body>	
 <!-- header -->
@@ -32,7 +29,7 @@ body{
 		<div class="container">
 			<nav class="navbar navbar-expand-sm navbar-dark">
 				<div class="navbar-header navbar-left ">
-					<h1><a class="navbar-brand" href="index.html">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
 				</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
@@ -43,10 +40,8 @@ body{
 							<li class="menu__item--current"><a href="#" class="menu__link ">Booking Rooms</a></li>
 							
 							<li class="menu__item"><a href="#" class="menu__link ">Chicked Customers</a></li>
-							
-							<li class="menu__item"><a href="#" class="menu__link ">Manager Profile</a></li>
 
-							<li class="nav-item dropdown menu__item">
+							<li class="nav-item navbar-nav dropdown menu__item">
 								<a class="nav-link dropdown-toggle menu__link menu__item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
 									Manager Options
 								</a>
@@ -64,16 +59,13 @@ body{
 	</div>
 </div><br>
 <br>
-<button type="submit" class="btn btn-primary">Back to Login</button>
-<br>
-<br>
+
 	<!-- start form-->
 	<div class="wrapper">
 
-	<form class="form-signin">
-	<h2 class="form-signin-heading text-center"><b>Collect Customer Details</b></h2> 
-	<br>
-
+<form class="form-signin">
+	<h2 class="form-signin-heading text-center"><b>Nidella Rooms Galary</b></h2> 
+	
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Customer NIC</label>
@@ -122,9 +114,14 @@ body{
     </div>
   </div>
 
-  <button type="submit" class="btn btn-lg btn-primary btn-block"> <a href="index.php">CheckOut Room</button>
+  <button type="submit" id="submitCusDetails" class="btn btn-lg btn-primary btn-block">ADD New Room</button>  
 </form>
 	</div>
+  <center>
+    <button type="submit" id="roomGalary" a href="login.html" class="btn btn-lg btn-primary btn-block" style="width: 300px;">Room Gallary</button>
+  </center>
+ 
+  
 
 <br>
 <br>
