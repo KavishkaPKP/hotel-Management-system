@@ -17,7 +17,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-sm navbar-dark">
 				<div class="navbar-header navbar-left ">
-					<h1><a class="navbar-brand" href="roomManagerLogin.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
 				</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>

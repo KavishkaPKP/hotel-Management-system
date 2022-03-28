@@ -9,7 +9,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="navbar-header navbar-left ">
-                <h1><a class="navbar-brand" href="roomManagerLogin.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+                <h1><a class="navbar-brand" href="index.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
@@ -68,51 +68,6 @@
                                 <th scope="col">Remove</th>
                             </tr>
                         </thead>
-                        <!-- <tbody class="customtable">
-                            <tr>
-                                <td>1</td>
-                                <td>992246758V</td>
-                                <td>Pasindu Kavishka</td>
-                                <td>292/7, Galwalagoda dekatana</td>
-                                <td>0701475136</td>
-                                <td>1999/08/11</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>2022/03/23</td>
-                                <td><button class="btn btn-sm btn-success">Edit</button></td>
-                                <td><button class="btn btn-sm btn-danger">Remove</button></td>
-                            </tr>
-                        </tbody>
-                        <tbody class="customtable">
-                          <tr>
-                          <td>2</td>
-                              <td>992246758V</td>
-                              <td>Pasindu Kavishka</td>
-                              <td>292/7, Galwalagoda dekatana</td>
-                              <td>0701475136</td>
-                              <td>1999/08/11</td>
-                              <td>2</td>
-                              <td>1</td>
-                              <td>2022/03/23</td>
-                              <td><button class="btn btn-sm btn-success">Edit</button></td>
-                              <td><button class="btn btn-sm btn-danger">Remove</button></td>
-                          </tr>
-                      </tbody>
-                      <tbody class="customtable">
-                        <tr>
-                        <td>3</td>
-                            <td>992246758V</td>
-                            <td>Pasindu Kavishka</td>
-                            <td>292/7, Galwalagoda dekatana</td>
-                            <td>0701475136</td>
-                            <td>1999/08/11</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>2022/03/23</td>
-                            <td><button class="btn btn-sm btn-success">Edit</button></td>
-                            <td><button class="btn btn-sm btn-danger">Remove</button></td>
-                        </tr>
-                    </tbody> -->
                     </table>
                 </div>
             </div>
@@ -127,7 +82,7 @@
 <!--start footer-->
 <footer class="bg-light text-center text-lg-start">
 <div class="footer">
-    <p>© 2022 NIDELLAREST . All Rights Reserved | Design by <a href="roomManagerLogin.php">NIDELLAREST</a> </p>
+    <p>© 2022 NIDELLAREST . All Rights Reserved | Design by <a href="index.php">NIDELLAREST</a> </p>
 </div>
 </footer>
 <!-- Boostrup java scripts -->

@@ -41,7 +41,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-sm navbar-dark">
 				<div class="navbar-header navbar-left ">
-					<h1><a class="navbar-brand" href="roomManagerLogin.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
 				</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
@@ -51,7 +51,7 @@
 						<ul class="navbar-nav">
 							<li class="menu__item"><a href="" class="menu__link ">Menu selection</a></li>
 							<br>
-							<li class="menu__item--current"><a href="roomManagerLogin.php" class="menu__link ">Rooms Manager </a></li>
+							<li class="menu__item--current"><a href="index.php" class="menu__link ">Rooms Manager </a></li>
 							<br>
 							<li class="menu__item"><a href="" class="menu__link ">Events Selection</a></li>
 							<br>
@@ -67,7 +67,7 @@
 	<!-- start form-->
 
 	<div class="wrapper">
-		<form class="form-signin" action="roomManagerLogin.php" method="POST">
+		<form class="form-signin" action="index.php" method="POST">
 			<h2 class="form-signin-heading text-center">Sign in</h2> 
 			<br>
 			<label for="inputMEmail">Manager Email</label>
