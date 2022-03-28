@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nidella Rest | Select Rooms</title>
+<title>Nidella Rest | checked Customers</title>
 	<!-- CSS only -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"><link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link href="css/hfstyle.css" rel="stylesheet" type="text/css" media="all" />
@@ -15,7 +9,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="navbar-header navbar-left ">
-                <h1><a class="navbar-brand" href=".html">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+                <h1><a class="navbar-brand" href="roomManagerLogin.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
@@ -23,20 +17,20 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <nav class="menu menu--iris">
                     <ul class="navbar-nav">
-                        <li class="menu__item"><a href="collectCusDetails.html" class="menu__link ">Booking Rooms</a></li>
+                        <li class="menu__item"><a href="collectCusDetails.php" class="menu__link ">Booking Rooms</a></li>
                         
-                        <li class="menu__item--current"><a href="chickedCus.html" class="menu__link ">Chicked Customers</a></li>
+                        <li class="menu__item--current"><a href="chickedCus.php" class="menu__link ">Chicked Customers</a></li>
 
                         <li class="nav-item navbar-nav dropdown menu__item">
                             <a class="nav-link dropdown-toggle menu__link menu__item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Manager Options
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="roomDetails.html">Room Details</a>
+                                <a class="dropdown-item" href="addRoom.php">Add Room</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="managerDetails.html">Manager Details</a>
+                                <a class="dropdown-item" href="managerDetails.php">Manager Details</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="roomGalary.html">Room Galary</a>
+                                <a class="dropdown-item" href="roomGalary.php">Room Galary</a>
                             </div>
                           </li>
                     </ul>
@@ -61,25 +55,29 @@
                     <table class="table">
                         <thead class="thead-light">
                             <tr>
+                                <th scope="col">Customer ID</th>
                                 <th scope="col">Customer NIC</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Address</th>
                                 <th scope="col">Contect Number</th>
                                 <th scope="col">Date of Birth</th>
                                 <th scope="col">Members</th>
+                                <th scope="col">Room ID</th>
                                 <th scope="col">Chicking Date</th>
                                 <th scope="col">Edit</th>
                                 <th scope="col">Remove</th>
                             </tr>
                         </thead>
-                        <tbody class="customtable">
+                        <!-- <tbody class="customtable">
                             <tr>
+                                <td>1</td>
                                 <td>992246758V</td>
                                 <td>Pasindu Kavishka</td>
                                 <td>292/7, Galwalagoda dekatana</td>
                                 <td>0701475136</td>
                                 <td>1999/08/11</td>
                                 <td>2</td>
+                                <td>1</td>
                                 <td>2022/03/23</td>
                                 <td><button class="btn btn-sm btn-success">Edit</button></td>
                                 <td><button class="btn btn-sm btn-danger">Remove</button></td>
@@ -87,12 +85,14 @@
                         </tbody>
                         <tbody class="customtable">
                           <tr>
+                          <td>2</td>
                               <td>992246758V</td>
                               <td>Pasindu Kavishka</td>
                               <td>292/7, Galwalagoda dekatana</td>
                               <td>0701475136</td>
                               <td>1999/08/11</td>
                               <td>2</td>
+                              <td>1</td>
                               <td>2022/03/23</td>
                               <td><button class="btn btn-sm btn-success">Edit</button></td>
                               <td><button class="btn btn-sm btn-danger">Remove</button></td>
@@ -100,24 +100,26 @@
                       </tbody>
                       <tbody class="customtable">
                         <tr>
+                        <td>3</td>
                             <td>992246758V</td>
                             <td>Pasindu Kavishka</td>
                             <td>292/7, Galwalagoda dekatana</td>
                             <td>0701475136</td>
                             <td>1999/08/11</td>
                             <td>2</td>
+                            <td>1</td>
                             <td>2022/03/23</td>
                             <td><button class="btn btn-sm btn-success">Edit</button></td>
                             <td><button class="btn btn-sm btn-danger">Remove</button></td>
                         </tr>
-                    </tbody>
+                    </tbody> -->
                     </table>
                 </div>
             </div>
         </div>
     </div>
     <br>
-   <a name="DWCusDetails" id="" class="btn btn-primary btn-block" href="#" role="button" style="background-color: #142C90;">Download All Chicked Customers Report </a>
+   <a name="DWCusDetails" id="btnCusDetailDownload" class="btn btn-primary btn-block" href="#" role="button" style="background-color: #142C90;">Download All Chicked Customers Report </a>
 
 </div>
 
@@ -125,7 +127,7 @@
 <!--start footer-->
 <footer class="bg-light text-center text-lg-start">
 <div class="footer">
-    <p>© 2022 NIDELLAREST . All Rights Reserved | Design by <a href="index.php">NIDELLAREST</a> </p>
+    <p>© 2022 NIDELLAREST . All Rights Reserved | Design by <a href="roomManagerLogin.php">NIDELLAREST</a> </p>
 </div>
 </footer>
 <!-- Boostrup java scripts -->

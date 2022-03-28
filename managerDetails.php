@@ -1,10 +1,25 @@
+<?php
+
+if(isset($_POST["submit"])){
+	$mid = $_POST["mID"];
+	$mname = $_POST["mName"];
+	$memail = $_POST["mEmail"];
+	$mpassword = $_POST["mPassword"];
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nidella Rest | Select Rooms</title>
+	<title>Nidella Rest | Register Manager</title>
+</head>
+<body>
+
+
 	<!-- CSS only -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"><link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link href="css/hfstyle.css" rel="stylesheet" type="text/css" media="all" />
@@ -32,7 +47,7 @@ body{
 	<div class="container">
 	  <nav class="navbar navbar-expand-sm navbar-dark">
 		<div class="navbar-header navbar-left ">
-		  <h1><a class="navbar-brand" href="login.html">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
+		  <h1><a class="navbar-brand" href="roomManagerLogin.php">NIDELLA <span>REST</span><p class="logo_w3l_agile_caption">Book Your Dream Resort</p></a></h1>
 		</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span></button>
@@ -40,20 +55,20 @@ body{
 					<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 					<nav class="menu menu--iris">
 			<ul class="navbar-nav">
-			  <li class="menu__item--current"><a href="collectCusDetails.html" class="menu__link ">Booking Rooms</a></li>
+			  <li class="menu__item--current"><a href="collectCusDetails.php" class="menu__link ">Booking Rooms</a></li>
 			  
-			  <li class="menu__item"><a href="chickedCus.html" class="menu__link ">Chicked Customers</a></li>
+			  <li class="menu__item"><a href="chickedCus.php" class="menu__link ">Chicked Customers</a></li>
   
 			  <li class="nav-item navbar-nav dropdown menu__item">
 				<a class="nav-link dropdown-toggle menu__link menu__item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
 				  Manager Options
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="roomDetails.html">Room Details</a>
+				  <a class="dropdown-item" href="addRoom.php">Room Details</a>
 				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="managerDetails.html">Manager Details</a>
+				  <a class="dropdown-item" href="managerDetails.php">Manager Details</a>
 				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="roomGalary.html">Room Galary</a>
+				  <a class="dropdown-item" href="roomGalary.php">Room Galary</a>
 				</div>
 				  </li>
 			</ul>
@@ -67,41 +82,39 @@ body{
 
 	<!-- start form-->
 	<div class="wrapper">
-    <div class="form-group" >
-      <input type="email" class="form-control" name="managerSearch" id="managerSearch"  placeholder="Search">
-      <br>
-      <button type="submit" class="btn btn-sm btn-primary ">Search Manager</button>
-      
-    </div>
+ 
 
-<form class="form-signin">
+<form class="form-signin" action="./includes/managerReg.inc.php" method="POST">
 	<h2 class="form-signin-heading text-center"><b>Manager Details</b></h2> 
 	
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Manager ID</label>
-      <input type="text" class="form-control" id="cusNIC" required autofocus="" />
+	<label for="mname">Manager Name</label>
+	<input type="Name" class="form-control" name="mName" autofocus="" placeholder="Name" />
     </div>
 
     <div class="form-group col-md-6">
-      <label for="inputPassword4">Manager Name</label>
-      <input type="Name" class="form-control" id="cusName" required />
+	<label for="memail">Manager Email</label>
+      <input type="Email" class="form-control" name="mEmail"  placeholder="Email" />
+     
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Manager Email</label>
-      <input type="Email" class="form-control" id="cusNOMember" required />
+	<label for="mpassword">Manager Password</label>
+      <input type="Password" class="form-control" name="mPassword"  placeholder="Password" />
+
     </div>
 
     <div class="form-group col-md-6">
-      <label for="inputPassword4">Manager Password</label>
-      <input type="password" class="form-control" id="managerPassword" required />
+	<label for="mconfirmpassword">Confirm Password</label>
+      <input type="Password" class="form-control" name="mConfirmPassword" placeholder="confirm password"/>
+
     </div>
   </div>
- 
-  <button type="submit" class="btn btn-lg btn-primary btn-block"> Add Manager</button>
+
+  <button class="btn btn-lg btn-primary btn-block" style="background-color: #142C90;" name="btnMRegister">Register Manager</button>
 </form>
 	</div>
 
@@ -117,5 +130,7 @@ body{
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+	
 </body>
 </html>
